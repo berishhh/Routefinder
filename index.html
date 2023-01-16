@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fastest Route Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcZ3-AaOOxRAoeO6_b4o-BoVaXqezJDbw&callback=initMap&libraries=geometry"></script>
+  </head>
+  <body>
+    <div>
+     <div class="hero">
+      <div class="text">
+      <h2>Plan your journey with the <span>fastest</span> route between addresses.</h2>
+      <p> Enter waypoints & calculate the quickest route. Keep adding waypoints to calculate further routes</p>
+
+   </div>
+    <div id="input-fields">
+      <label>Start Address:</label>
+      <input type="text" id="start-address" placeholder="Enter start address">
+      <br>
+      <label>End Address:</label>
+      <input type="text" id="end-address" placeholder="Enter end address">
+      <br>
+      <label>Waypoints:</label>
+      <input type="text" id="waypoint-address-1" placeholder="Enter waypoint address">
+      <button type="button" id="add-waypoint-btn">Add Waypoint</button>
+      <br>
+      <button type="button" id="calculate-route-btn">Calculate Route</button>
+    </div>
+    <div id="map" style="height: 500px; width: 88%;"></div>
+    <div id="distance"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
